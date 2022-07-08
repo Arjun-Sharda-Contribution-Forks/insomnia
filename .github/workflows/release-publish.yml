@@ -129,7 +129,7 @@ jobs:
 
       - name: Upload to snapcraft (stable only)
         if: ${{ env.IS_PRERELEASE == 'false' }}
-        uses: snapcore/action-publish@7fe468c9de12396a9c8964af5d0dfd1d5b493bd7
+        uses: snapcore/action-publish@0a8d537ae06f4a292e8b4ef1084cd5631b3c6871
         env:
           SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.SNAPCRAFT_LOGIN_FILE }}
         with:
